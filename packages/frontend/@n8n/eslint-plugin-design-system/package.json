@@ -12,8 +12,8 @@
     }
   },
   "scripts": {
-    "build": "tsc --project tsconfig.json",
-    "build:unchecked": "tsc --project tsconfig.json --noCheck",
+    "build": "node init && tsc --project tsconfig.json",
+    "build:unchecked": "node init && tsc --project tsconfig.json --noCheck",
     "clean": "rimraf dist .turbo",
     "format": "biome format --write .",
     "format:check": "biome ci .",

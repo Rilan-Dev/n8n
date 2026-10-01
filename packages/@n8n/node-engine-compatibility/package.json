@@ -5,8 +5,8 @@
   "scripts": {
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json",
-    "build:unchecked": "tsc -p tsconfig.build.json --noCheck",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "build:unchecked": "node init && tsc -p tsconfig.build.json --noCheck",
     "format": "biome format --write src",
     "format:check": "biome ci src",
     "lint": "oxlint --quiet",
