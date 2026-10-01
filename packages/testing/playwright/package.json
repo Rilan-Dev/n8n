@@ -2,7 +2,7 @@
   "name": "n8n-playwright",
   "private": true,
   "scripts": {
-    "dev": "N8N_BASE_URL=http://localhost:5678 N8N_EDITOR_URL=http://localhost:8080 RESET_E2E_DB=true playwright test --project=e2e",
+    "dev": "node init && N8N_BASE_URL=http://localhost:5678 N8N_EDITOR_URL=http://localhost:8080 RESET_E2E_DB=true playwright test --project=e2e",
     "test:dev-server-smoke": "N8N_BASE_URL=http://localhost:5678 N8N_EDITOR_URL=http://localhost:8080 RESET_E2E_DB=true playwright test --project=dev-server-smoke",
     "test:dev-server-smoke:alt-port": "N8N_BASE_URL=http://localhost:5699 N8N_EDITOR_URL=http://localhost:8082 N8N_TEST_ENV='{\"N8N_RUNNERS_BROKER_PORT\":\"5701\"}' RESET_E2E_DB=true playwright test --project=dev-server-smoke",
     "test:all": "playwright test",
