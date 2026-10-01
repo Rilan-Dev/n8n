@@ -1,0 +1,19 @@
+{
+  "repository": "Rilan-Dev/n8n",
+  "commit": "31b6649d783ded919757ccd64259ea8a891c0955",
+  "rootTree": "e8d7c3aaa9d88e32d40876194f8cd9c6d69b6b0a",
+  "treeEntries": 36795,
+  "blobEntries": 29873,
+  "treeEntriesOnly": 6922,
+  "packageJsonFiles": 97,
+  "implementationLikeFiles": 27858,
+  "status": "INVENTORY_ONLY",
+  "verification": {
+    "gitIdentity": "VERIFIED",
+    "snapshotIntegrity": "PENDING",
+    "firstPartyClosure": "PENDING",
+    "externalDependencyInventory": "PENDING",
+    "capabilityClosure": "PENDING",
+    "legalClassification": "PENDING"
+  }
+}

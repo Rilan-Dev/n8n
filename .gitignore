@@ -12,10 +12,7 @@ npm-debug.log*
 yarn.lock
 google-generated-credentials.json
 _START_PACKAGE
-.env
-.env.local
 .env.eval
-.vscode/*
 !.claude
 !.vscode/extensions.json
 !.vscode/settings.default.json
@@ -97,3 +94,4 @@ stryker.log
 # Generated migration indexes (scripts/generate-migration-index.mjs)
 packages/@n8n/db/src/migrations/sqlite/index.ts
 packages/@n8n/db/src/migrations/postgresdb/index.ts
+config.bat
