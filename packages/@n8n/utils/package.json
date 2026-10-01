@@ -26,9 +26,9 @@
   },
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "dev": "tsdown --watch",
-    "build": "tsdown",
-    "build:unchecked": "pnpm run build",
+    "dev": "node init && tsdown --watch",
+    "build": "node init && tsdown",
+    "build:unchecked": "node init && pnpm run build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
