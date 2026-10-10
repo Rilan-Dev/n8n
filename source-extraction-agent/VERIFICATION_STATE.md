@@ -12,5 +12,5 @@ The package scripts, schemas, links and verifier fixture tests have been mirrore
 
 
 ## Latest workflow snapshot — 2026-10-10
-- Source Extraction Agent Checks run 38071658062: queued at last observation; no conclusion available. A separate existing CI: Pull Requests (Build, Test, Lint) run 38071658565 reported startup_failure; this is not the package-check result and has not been investigated.
+- Source Extraction Agent Checks run 38071658062: queued when observed on the preceding head 6e705a9…; the subsequent verification-state update advanced HEAD, so this run is not evidence for current HEAD. A separate existing CI: Pull Requests (Build, Test, Lint) run 38071658565 reported startup_failure; this is not the package-check result and has not been investigated.
 Do not treat a queued/missing run as PASS. Continue independent work without repeatedly polling; update this record when a result is intentionally reviewed.
