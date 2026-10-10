@@ -9,3 +9,8 @@ Extraction PASS requires pinned source URL/ref/commit/root tree, license/provena
 
 ## Agent package checks
 The package scripts, schemas, links and verifier fixture tests have been mirrored but have **not been executed against this target branch in this session**. Run `npm run check` and `npm test` from this directory in a local checkout and record actual results. This status is independent of upstream application extraction PASS.
+
+
+## Latest workflow snapshot — 2026-10-10
+- Source Extraction Agent Checks run 38071658062: queued at last observation; no conclusion available. A separate existing CI: Pull Requests (Build, Test, Lint) run 38071658565 reported startup_failure; this is not the package-check result and has not been investigated.
+Do not treat a queued/missing run as PASS. Continue independent work without repeatedly polling; update this record when a result is intentionally reviewed.
