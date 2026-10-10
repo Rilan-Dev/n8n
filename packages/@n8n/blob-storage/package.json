@@ -4,10 +4,10 @@
   "description": "Blob storage layer for n8n, with filesystem, S3, and Azure Blob backends",
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "dev": "pnpm watch",
+    "dev": "node init && pnpm watch",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json",
-    "build:unchecked": "tsc -p tsconfig.build.json --noCheck",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "build:unchecked": "node init && tsc -p tsconfig.build.json --noCheck",
     "format": "biome format --write .",
     "format:check": "biome ci .",
     "lint": "oxlint --quiet",

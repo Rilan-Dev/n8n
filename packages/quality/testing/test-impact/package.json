@@ -16,9 +16,9 @@
   ],
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "build": "tsc",
-    "build:unchecked": "tsc --noCheck",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "build:unchecked": "node init && tsc --noCheck",
+    "dev": "node init && tsc --watch",
     "test": "vitest run",
     "test:unit": "vitest run",
     "test:watch": "vitest",
