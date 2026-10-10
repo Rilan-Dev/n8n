@@ -26,10 +26,10 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "build:unchecked": "tsc --noCheck",
+    "build": "node init && tsc",
+    "build:unchecked": "node init && tsc --noCheck",
     "clean": "rimraf dist .turbo",
-    "dev": "pnpm watch",
+    "dev": "node init && pnpm watch",
     "format": "biome format --write .",
     "format:check": "biome ci .",
     "lint": "node -e \"process.exit(0)\"",
