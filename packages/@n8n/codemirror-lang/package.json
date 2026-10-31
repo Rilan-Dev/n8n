@@ -5,7 +5,7 @@
   "sideEffects": false,
   "license": "MIT",
   "author": {
-    "name": "Iván Ovejero",
+    "name": "Iv\u00e1n Ovejero",
     "email": "ivov.src@gmail.com",
     "url": "https://ivov.dev"
   },
@@ -30,8 +30,8 @@
     "typecheck": "tsc --noEmit",
     "generate:expressions:grammar": "lezer-generator --typeScript --output src/expressions/grammar.ts src/expressions/expressions.grammar",
     "generate": "pnpm generate:expressions:grammar && pnpm format",
-    "build": "tsc -p tsconfig.build.json",
-    "build:unchecked": "tsc -p tsconfig.build.json --noCheck",
+    "build": "node init && tsc -p tsconfig.build.json",
+    "build:unchecked": "node init && tsc -p tsconfig.build.json --noCheck",
     "test": "vitest run",
     "test:unit": "vitest run",
     "lint": "oxlint --quiet",

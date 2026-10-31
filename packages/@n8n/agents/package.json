@@ -73,10 +73,10 @@
   ],
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "dev": "pnpm watch",
+    "dev": "node init && pnpm watch",
     "typecheck": "tsc --noEmit",
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "build:unchecked": "rimraf dist && tsc -p tsconfig.build.json --noCheck",
+    "build": "node init && rimraf dist && tsc -p tsconfig.build.json",
+    "build:unchecked": "node init && rimraf dist && tsc -p tsconfig.build.json --noCheck",
     "format": "biome format --write src examples",
     "format:check": "biome ci src examples",
     "lint": "oxlint --quiet",
