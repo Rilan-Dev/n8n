@@ -11,11 +11,11 @@
     }
   },
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
-    "build:unchecked": "tsc --project tsconfig.build.json --noCheck",
-    "build:docs": "pnpm build && eslint-doc-generator",
+    "build": "node init && tsc --project tsconfig.build.json",
+    "build:unchecked": "node init && tsc --project tsconfig.build.json --noCheck",
+    "build:docs": "node init && pnpm build && eslint-doc-generator",
     "clean": "rimraf dist .turbo",
-    "dev": "pnpm watch",
+    "dev": "node init && pnpm watch",
     "format": "biome format --write .",
     "format:check": "biome ci .",
     "lint": "eslint src && pnpm lint:docs",
@@ -58,11 +58,11 @@
     "configEmoji": [
       [
         "recommended",
-        "✅"
+        "\u2705"
       ],
       [
         "recommendedWithoutN8nCloudSupport",
-        "☑️"
+        "\u2611\ufe0f"
       ]
     ]
   },

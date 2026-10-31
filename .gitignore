@@ -14,11 +14,8 @@ npm-debug.log*
 yarn.lock
 google-generated-credentials.json
 _START_PACKAGE
-.env
-.env.local
 .env.eval
 .env.ai-surfaces
-.vscode/*
 !.claude
 !.vscode/extensions.json
 !.vscode/settings.default.json
@@ -103,3 +100,4 @@ packages/@n8n/db/src/migrations/sqlite/index.ts
 packages/@n8n/db/src/migrations/postgresdb/index.ts
 # Files that local dev tools generate, such as `pnpm telemetry:sink`
 .output/
+config.bat
