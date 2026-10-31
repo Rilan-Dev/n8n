@@ -14,17 +14,17 @@
   ],
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "build": "tsc",
-    "build:unchecked": "tsc --noCheck",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "build:unchecked": "node init && tsc --noCheck",
+    "dev": "node init && tsc --watch",
     "test": "vitest run",
     "test:unit": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "format": "biome format --write .",
     "format:check": "biome ci .",
-		"lint": "oxlint --quiet",
-		"lint:fix": "oxlint --fix",
+    "lint": "oxlint --quiet",
+    "lint:fix": "oxlint --fix",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
@@ -46,13 +46,13 @@
   "peerDependencies": {
     "ts-morph": "catalog:"
   },
-	"devDependencies": {
-		"@n8n/eslint-config": "workspace:*",
-		"@n8n/oxlint-config": "workspace:*",
+  "devDependencies": {
+    "@n8n/eslint-config": "workspace:*",
+    "@n8n/oxlint-config": "workspace:*",
     "@types/node": "catalog:",
     "@vitest/coverage-v8": "catalog:",
-		"oxlint": "catalog:",
-		"oxlint-tsgolint": "catalog:",
+    "oxlint": "catalog:",
+    "oxlint-tsgolint": "catalog:",
     "typescript": "catalog:typescript",
     "vitest": "catalog:"
   }
