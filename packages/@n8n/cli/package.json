@@ -1,7 +1,7 @@
 {
   "name": "@n8n/cli",
   "version": "0.25.0",
-  "description": "Client CLI for n8n — manage workflows, executions, and credentials from the terminal",
+  "description": "Client CLI for n8n \u2014 manage workflows, executions, and credentials from the terminal",
   "license": "LicenseRef-n8n-sustainable-use",
   "bin": {
     "n8n-cli": "bin/n8n-cli.mjs"
@@ -15,10 +15,10 @@
   ],
   "scripts": {
     "clean": "rimraf dist .turbo",
-    "dev": "pnpm watch",
+    "dev": "node init && pnpm watch",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json && tsdown",
-    "build:unchecked": "tsc -p tsconfig.build.json --noCheck && tsdown",
+    "build": "node init && tsc -p tsconfig.build.json && tsdown",
+    "build:unchecked": "node init && tsc -p tsconfig.build.json --noCheck && tsdown",
     "format": "biome format --write .",
     "format:check": "biome ci .",
     "lint": "oxlint src --quiet",

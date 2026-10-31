@@ -6,7 +6,7 @@
   "type": "module",
   "bin": "dist/cli.js",
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "node init && tsc --project tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:unit": "vitest run",
